@@ -1,3 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "Game of Thrones";
+  src: url("//db.onlinewebfonts.com/t/97c4b25dc74e0ab045154e75a8fdd69d.eot");
+  src: url("//db.onlinewebfonts.com/t/97c4b25dc74e0ab045154e75a8fdd69d.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/97c4b25dc74e0ab045154e75a8fdd69d.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/97c4b25dc74e0ab045154e75a8fdd69d.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/97c4b25dc74e0ab045154e75a8fdd69d.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/97c4b25dc74e0ab045154e75a8fdd69d.svg#Game of Thrones")
+      format("svg");
+}
+
 *,
 *::after,
 *::before {
@@ -7,4 +23,248 @@
 body {
   margin: 0;
   padding: 0;
+}
+.header {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 9999;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0em auto;
+  padding: 0em 2em;
+  height: 70px;
+  align-items: center;
+}
+.header__wrapper__menu {
+  background-color: transparent;
+  color: #84a3ba;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+.header__wrapper__menu:hover {
+  transition: 300ms ease-in-out;
+  color: darken(#84a3ba, 10%);
+}
+.header__wrapper__nav {
+  display: flex;
+  align-items: center;
+}
+.header__wrapper__nav__link {
+  padding: 1em;
+  text-decoration: none;
+  font-family: Game of Thrones;
+  color: #84a3ba;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+.header__wrapper__nav__link:hover {
+  transition: 300ms ease-in-out;
+  color: darken(#84a3ba, 10%);
+}
+.home__section {
+  width: 100%;
+  background-color: #000000;
+  position: relative;
+  height: 800px;
+}
+.home__section__img {
+  width: 100%;
+  height: 100%;
+}
+.home__section__overlay {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  height: 100%;
+}
+.home__section__overlay__content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0em auto;
+  height: 100%;
+  padding: 0em 2em;
+}
+.home__section__overlay__left {
+  width: 50%;
+}
+.home__section__overlay__left__heading {
+  font-size: 22px;
+  color: white;
+  font-family: Game of Thrones;
+  margin-bottom: 1em;
+}
+.home__section__overlay__left__sub__heading {
+  font-size: 16px;
+  color: white;
+  font-family: Game of Thrones;
+  margin-bottom: 1em;
+}
+.home__section__overlay__left__info {
+  font-size: 14px;
+  color: #84a3ba;
+  font-family: Montserrat;
+  margin-bottom: 1em;
+  width: 80%;
+}
+.home__section__overlay__right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home__section__overlay__right__img {
+  width: 500px;
+}
+.slogan__container {
+  width: 100%;
+  background-color: #000000;
+  padding: 2em 2em;
+}
+.slogan__container__text {
+  margin: 0em auto;
+  width: 100%;
+  max-width: 900px;
+  color: white;
+  text-align: center;
+  font-family: Game of Thrones;
+  font-size: 14px;
+  line-height: 22px;
+}
+.home__section__bottom__overlay {
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(transparent, #ffffff);
+  padding: 2em 2em;
+  bottom: 0px;
+}
+.home__section__bottom__overlay__text {
+  margin: 0em auto;
+  padding: 1em 0em;
+  width: 100%;
+  max-width: 1000px;
+  color: #0c0e17;
+  text-align: center;
+  font-family: Montserrat;
+}
+.roadmap__section {
+  width: 100%;
+}
+.roadmap__section__content {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0em 2em;
+  display: flex;
+  margin: 0em auto;
+  justify-content: space-between;
+  margin-bottom: 4em;
+}
+.roadmap__section__content__card {
+  background: linear-gradient(#657a8f, #04080d);
+  flex: 1;
+  max-width: 30%;
+  padding: 2em;
+  height: fit-content;
+}
+.roadmap__section__content__card__heading {
+  font-size: 20px;
+  font-family: Game of Thrones;
+  color: #ffffff;
+  margin-bottom: 0.5em;
+}
+.roadmap__section__content__card__heading span {
+  font-size: 32px;
+}
+.roadmap__section__content__card__entry {
+  font-size: 14px;
+  font-family: Montserrat;
+  color: #ffffff;
+  margin-bottom: 0.5em;
+}
+.how__buy__section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.how__buy__section__img {
+  width: 100%;
+  max-width: 700px;
+}
+.bar {
+  width: 100%;
+  max-width: 1000px;
+  height: 1px;
+  background-color: #0c0e17;
+  margin: 4em auto;
+}
+.footer {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+.footer__img {
+  opacity: 50%;
+  width: 100%;
+  height: 100%;
+}
+.footer__overlay {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.footer__overlay__content {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0em 2em;
+  margin: 0em auto;
+  display: flex;
+}
+.footer__overlay__content__col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.footer__overlay__content__col__heading {
+  font-size: 14px;
+  color: #0c0e17;
+  font-family: Game Of Thrones;
+  margin-bottom: 1em;
+}
+.footer__overlay__content__col__entry {
+  color: #0c0e17;
+  font-family: Montserrat;
+  margin-bottom: 0.5em;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.footer__overlay__content__col__entry svg {
+  width: 18px;
+  height: 18px;
+  margin-right: 1em;
+}
+@media (max-width: 800px) {
+  .header__wrapper__menu {
+    display: flex;
+  }
+  .header__wrapper__nav {
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0em 1.4em;
+    top: 70px;
+    left: 0px;
+    width: 100%;
+  }
 }
