@@ -6,6 +6,7 @@ import aboutSectionBg from "./assets/aboutSectionBg.png";
 import infoSectionBg from "./assets/infoSectionBg.png";
 import understandingSectionBg from "./assets/understandingSectionBg.png";
 import howtobuy from "./assets/howtobuy.png";
+import whoSectionBg from "./assets/whoSectionBg.png";
 import footerBg from "./assets/footerBg.png";
 import img from "./assets/img.png";
 
@@ -104,9 +105,51 @@ function App() {
         </div>
       </div>
       <section id="home" className="home__section">
-        <img src={infoSectionBg} alt="" className="home__section__img" />
+        <img src={whoSectionBg} alt="" className="home__section__img" />
         <div className="home__section__overlay">
           <div className="home__section__overlay__content">
+            <div className="home__section__overlay__left">
+              <div className="home__section__overlay__left__heading">
+                Who is the White Walker Inu?
+              </div>
+              <div className="home__section__overlay__left__info">
+                <p>
+                  Oh, my sweet summer child. What do you know about fear? Fear
+                  is for the winter, when the snows fall a hundred feet deep.
+                  Fear is for the Long Night. That is the time for fear, my
+                  little lord, when the White Walker Inu moves through the
+                  woods. Thousands of years ago, there came a night that lasted
+                  24 hours. Kings froze to death in their castles, same as
+                  shepherds in their huts. And women smothered their babies,
+                  rather than see them starve and get rug pulled by dishonest
+                  Devs.
+                </p>
+                <p>
+                  So, is this the sort of story that you like? In that darkness,
+                  the White Walker Inu came for the first time. He swept through
+                  cities and kingdoms, riding his dead horse, hunting with his
+                  packs of pale spiders, big as hounds and commanding an army of
+                  the dead wights … $WINU has come to take the crypto realm by
+                  storm and wants the iron throne. But no little lord it does
+                  not end there, for the White Walker Inu wants to go to the
+                  moon!!!
+                </p>
+              </div>
+            </div>
+            <div className="home__section__overlay__right">
+              <img
+                src={img}
+                alt=""
+                className="home__section__overlay__right__img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="home" className="home__section">
+        <img src={infoSectionBg} alt="" className="home__section__img" />
+        <div className="home__section__overlay">
+          <div className="home__section__overlay__content home__section__overlay__content__reverse">
             <div className="home__section__overlay__right">
               <img
                 src={img}

@@ -23,6 +23,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 .header {
   position: absolute;
@@ -195,6 +196,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding: 0em 2em;
 }
 .how__buy__section__img {
   width: 100%;
@@ -229,9 +231,11 @@ body {
   padding: 0em 2em;
   margin: 0em auto;
   display: flex;
+  justify-content: space-between;
 }
 .footer__overlay__content__col {
-  flex: 1;
+  width: 25%;
+  padding-right: 1em;
   display: flex;
   flex-direction: column;
 }
@@ -254,6 +258,12 @@ body {
   height: 18px;
   margin-right: 1em;
 }
+@media (max-width: 1200px) {
+  .home__section__img {
+    width: 120%;
+    margin-left: -10%;
+  }
+}
 @media (max-width: 800px) {
   .header__wrapper__menu {
     display: flex;
@@ -263,8 +273,79 @@ body {
     flex-direction: column;
     align-items: flex-start;
     padding: 0em 1.4em;
+    padding-bottom: 1em;
     top: 70px;
     left: 0px;
     width: 100%;
+    background-color: #000000;
+  }
+  .home__section__overlay__content {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home__section__overlay__content__reverse {
+    flex-direction: column-reverse;
+  }
+  .home__section__overlay__left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home__section__overlay__left * {
+    text-align: center;
+  }
+  .home__section__overlay__left__heading,
+  .home__section__overlay__left__sub__heading {
+    line-height: 32px;
+  }
+  .home__section__overlay__left__info {
+    width: 100%;
+  }
+  .home__section__overlay__right {
+    width: 100%;
+  }
+  .home__section__overlay__right__img {
+    max-width: 60%;
+  }
+  .home__section__img {
+    width: 160%;
+    margin-left: -30%;
+  }
+  .roadmap__section__content {
+    flex-direction: column;
+  }
+  .roadmap__section__content__card {
+    max-width: 100%;
+    margin-bottom: 2em;
+  }
+  .roadmap__section__content__card:last-child {
+    margin-bottom: 0em;
+  }
+  .footer {
+    height: 450px;
+  }
+  .footer__overlay__content {
+    flex-wrap: wrap;
+  }
+  .footer__overlay__content__col {
+    min-width: 50%;
+    margin-bottom: 2em;
+  }
+}
+
+@media (max-width: 600px) {
+  .home__section {
+    height: 900px;
+  }
+  .home__section__img {
+    width: 300%;
+    margin-left: -100%;
+  }
+  .footer {
+    height: 580px;
+  }
+  .footer__overlay__content__col {
+    min-width: 100%;
   }
 }

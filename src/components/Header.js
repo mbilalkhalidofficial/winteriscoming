@@ -1,10 +1,25 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Header() {
   const [isMobile, setIsMobile] = useState(false);
   const [isNavOpen, setIsNavOpen] = useState(true);
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      if (window.innerWidth <= 800) {
+        setIsMobile(true);
+        setIsNavOpen(false);
+      } else {
+        setIsMobile(false);
+        setIsNavOpen(true);
+      }
+    });
+  });
+
   return (
-    <div className="header">
+    <div
+      className="header"
+      style={isMobile && isNavOpen ? { backgroundColor: "#000000" } : null}
+    >
       <div className="header__wrapper">
         <a href="#home" className="header__wrapper__logo">
           white walker inu
