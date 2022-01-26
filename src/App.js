@@ -27,13 +27,16 @@ function App() {
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+    document
+      .querySelector("animate__animated")
+      .style.setProperty("--animate-duration", "2s");
   }, []);
   return (
     <div className="App">
       <Header />
       <section id="home" className="home__section">
         <img src={homeSectoinBg} alt="" className="home__section__img" />
-        <div className="home__section__overlay animate__animated animate__fadeInTopLeft animate__delay-1s">
+        <div className="home__section__overlay animate__animated animate__fadeIn animate__delay-1s">
           <div className="home__section__overlay__content">
             <div className="home__section__overlay__left">
               <div className="home__section__overlay__left__heading">
@@ -71,7 +74,7 @@ function App() {
           <div
             className={
               isAnimate
-                ? "home__section__overlay__content animate__animated animate__fadeInRight animate__delay-1s"
+                ? "home__section__overlay__content animate__animated animate__fadeIn animate__delay-1s"
                 : "home__section__overlay__content"
             }
           >
@@ -128,7 +131,7 @@ function App() {
         <div
           className={
             isAnimate
-              ? "home__section__overlay animate__animated animate__fadeInLeft animate__delay-2s"
+              ? "home__section__overlay animate__animated animate__fadeIn animate__delay-2s"
               : "home__section__overlay"
           }
         >
@@ -177,7 +180,7 @@ function App() {
         <div
           className={
             isAnimate
-              ? "home__section__overlay animate__animated animate__fadeInRight animate__delay-3s"
+              ? "home__section__overlay animate__animated animate__fadeIn animate__delay-3s"
               : "home__section__overlay"
           }
         >
@@ -248,7 +251,7 @@ function App() {
         <div
           className={
             isAnimate
-              ? "home__section__overlay animate__animated animate__fadeInLeft animate__delay-4s"
+              ? "home__section__overlay animate__animated animate__fadeIn animate__delay-4s"
               : "home__section__overlay"
           }
         >
@@ -276,7 +279,7 @@ function App() {
         <div
           className={
             isAnimate
-              ? "home__section__bottom__overlay animate__animated animate__fadeInLeft animate__delay-4s"
+              ? "home__section__bottom__overlay animate__animated animate__fadeIn animate__delay-4s"
               : "home__section__bottom__overlay"
           }
         >
@@ -294,7 +297,7 @@ function App() {
         <div
           className={
             isAnimate
-              ? "steps__section__content animate__animated animate__fadeInRight animate__delay-5s"
+              ? "steps__section__content animate__animated animate__fadeIn animate__delay-5s"
               : "steps__section__content"
           }
         >
@@ -505,7 +508,7 @@ function App() {
         id="howtobuy"
         className={
           isAnimate
-            ? "slogan__container  animate__animated animate__fadeInLeft animate__delay-6s"
+            ? "slogan__container  animate__animated animate__fadeIn animate__delay-6s"
             : "slogan__container"
         }
         className="how__buy__section"
@@ -532,143 +535,47 @@ function App() {
         <img src={footerBg} alt="" className="footer__img" />
         <div className="footer__overlay">
           <div className="footer__overlay__content">
-            <div className="footer__overlay__content__col">Logo Here</div>
-            <div className="footer__overlay__content__col">
-              <div className="footer__overlay__content__col__heading">
-                Quicklinks
-              </div>
-              <a href="#about" className="footer__overlay__content__col__entry">
-                About
-              </a>
-              <a href="#about" className="footer__overlay__content__col__entry">
-                Tokenomics
-              </a>
-              <a href="#about" className="footer__overlay__content__col__entry">
-                Long Night
-              </a>
-              <a href="#about" className="footer__overlay__content__col__entry">
-                Roadmap
-              </a>
-              <a href="#about" className="footer__overlay__content__col__entry">
-                Dashboard
-              </a>
-              <a href="#about" className="footer__overlay__content__col__entry">
-                How to Buy
+            <div className="footer__overlay__content__heading">Community</div>
+            <div className="footer__overlay__content__info">
+              Our community is growing stronger by the day, follow us on our
+              social media platforms to get to most up-to-date and accurate
+              Whitewalkerinu information
+            </div>
+            <div className="footer__overlay__content__info">
+              We invite you yo join our Telegram group, where you can interact
+              with us, and Thousands of other members of the Whitewalkerinu.
+            </div>
+            <div className="footer__overlay__content__links">
+              <a href="#" className="footer__overlay__content__links__link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 50 50"
+                  fill="currentColor"
+                >
+                  <path d="M 44.376953 5.9863281 C 43.889905 6.0076957 43.415817 6.1432497 42.988281 6.3144531 C 42.565113 6.4845113 40.128883 7.5243408 36.53125 9.0625 C 32.933617 10.600659 28.256963 12.603668 23.621094 14.589844 C 14.349356 18.562196 5.2382813 22.470703 5.2382812 22.470703 L 5.3046875 22.445312 C 5.3046875 22.445312 4.7547875 22.629122 4.1972656 23.017578 C 3.9185047 23.211806 3.6186028 23.462555 3.3730469 23.828125 C 3.127491 24.193695 2.9479735 24.711788 3.015625 25.259766 C 3.2532479 27.184511 5.2480469 27.730469 5.2480469 27.730469 L 5.2558594 27.734375 L 14.158203 30.78125 C 14.385177 31.538434 16.858319 39.792923 17.402344 41.541016 C 17.702797 42.507484 17.984013 43.064995 18.277344 43.445312 C 18.424133 43.635633 18.577962 43.782915 18.748047 43.890625 C 18.815627 43.933415 18.8867 43.965525 18.957031 43.994141 C 18.958531 43.994806 18.959437 43.99348 18.960938 43.994141 C 18.969579 43.997952 18.977708 43.998295 18.986328 44.001953 L 18.962891 43.996094 C 18.979231 44.002694 18.995359 44.013801 19.011719 44.019531 C 19.043456 44.030655 19.062905 44.030268 19.103516 44.039062 C 20.123059 44.395042 20.966797 43.734375 20.966797 43.734375 L 21.001953 43.707031 L 26.470703 38.634766 L 35.345703 45.554688 L 35.457031 45.605469 C 37.010484 46.295216 38.415349 45.910403 39.193359 45.277344 C 39.97137 44.644284 40.277344 43.828125 40.277344 43.828125 L 40.310547 43.742188 L 46.832031 9.7519531 C 46.998903 8.9915162 47.022612 8.334202 46.865234 7.7402344 C 46.707857 7.1462668 46.325492 6.6299361 45.845703 6.34375 C 45.365914 6.0575639 44.864001 5.9649605 44.376953 5.9863281 z M 44.429688 8.0195312 C 44.627491 8.0103707 44.774102 8.032983 44.820312 8.0605469 C 44.866523 8.0881109 44.887272 8.0844829 44.931641 8.2519531 C 44.976011 8.419423 45.000036 8.7721605 44.878906 9.3242188 L 44.875 9.3359375 L 38.390625 43.128906 C 38.375275 43.162926 38.240151 43.475531 37.931641 43.726562 C 37.616914 43.982653 37.266874 44.182554 36.337891 43.792969 L 26.632812 36.224609 L 26.359375 36.009766 L 26.353516 36.015625 L 23.451172 33.837891 L 39.761719 14.648438 A 1.0001 1.0001 0 0 0 38.974609 13 A 1.0001 1.0001 0 0 0 38.445312 13.167969 L 14.84375 28.902344 L 5.9277344 25.849609 C 5.9277344 25.849609 5.0423771 25.356927 5 25.013672 C 4.99765 24.994652 4.9871961 25.011869 5.0332031 24.943359 C 5.0792101 24.874869 5.1948546 24.759225 5.3398438 24.658203 C 5.6298218 24.456159 5.9609375 24.333984 5.9609375 24.333984 L 5.9941406 24.322266 L 6.0273438 24.308594 C 6.0273438 24.308594 15.138894 20.399882 24.410156 16.427734 C 29.045787 14.44166 33.721617 12.440122 37.318359 10.902344 C 40.914175 9.3649615 43.512419 8.2583658 43.732422 8.1699219 C 43.982886 8.0696253 44.231884 8.0286918 44.429688 8.0195312 z M 33.613281 18.792969 L 21.244141 33.345703 L 21.238281 33.351562 A 1.0001 1.0001 0 0 0 21.183594 33.423828 A 1.0001 1.0001 0 0 0 21.128906 33.507812 A 1.0001 1.0001 0 0 0 20.998047 33.892578 A 1.0001 1.0001 0 0 0 20.998047 33.900391 L 19.386719 41.146484 C 19.35993 41.068197 19.341173 41.039555 19.3125 40.947266 L 19.3125 40.945312 C 18.800713 39.30085 16.467362 31.5161 16.144531 30.439453 L 33.613281 18.792969 z M 22.640625 35.730469 L 24.863281 37.398438 L 21.597656 40.425781 L 22.640625 35.730469 z"></path>
+                </svg>
               </a>
             </div>
-            <div className="footer__overlay__content__col">
-              <div className="footer__overlay__content__col__heading">
-                Contact us
-              </div>
-              <a href="#about" className="footer__overlay__content__col__entry">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="25.425"
-                  height="22.656"
-                  viewBox="0 0 25.425 22.656"
-                >
-                  <path
-                    id="Icon_awesome-phone-alt"
-                    data-name="Icon awesome-phone-alt"
-                    d="M24.7,16.01l-5.562-2.124a1.289,1.289,0,0,0-1.39.305l-2.463,2.682a17.536,17.536,0,0,1-8.8-7.841L9.495,6.837A.987.987,0,0,0,9.838,5.6L7.454.642A1.242,1.242,0,0,0,6.088.027L.924,1.089A1.1,1.1,0,0,0,0,2.124c0,11.35,10.324,20.532,23.042,20.532a1.172,1.172,0,0,0,1.162-.823l1.192-4.6A1.05,1.05,0,0,0,24.7,16.01Z"
-                    transform="translate(0 0)"
-                    fill="#0c0e17"
-                  />
-                </svg>
-                111-111-111-111
-              </a>
-              <a href="#about" className="footer__overlay__content__col__entry">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="26.42"
-                  height="17.834"
-                  viewBox="0 0 26.42 17.834"
-                >
-                  <path
-                    id="Icon_zocial-email"
-                    data-name="Icon zocial-email"
-                    d="M.072,20.323V5.648q0-.025.076-.484l8.637,7.389L.174,20.832a2.159,2.159,0,0,1-.1-.51ZM1.219,4.144a1.1,1.1,0,0,1,.433-.076H24.913a1.443,1.443,0,0,1,.459.076l-8.662,7.414-1.147.917-2.268,1.86-2.268-1.86-1.147-.917Zm.025,17.682,8.688-8.331,3.363,2.726,3.363-2.726,8.688,8.331a1.223,1.223,0,0,1-.433.076H1.652a1.154,1.154,0,0,1-.408-.076ZM17.8,12.552l8.611-7.389a1.521,1.521,0,0,1,.076.484V20.323a1.953,1.953,0,0,1-.076.51Z"
-                    transform="translate(-0.072 -4.068)"
-                    fill="#0c0e17"
-                  />
-                </svg>
-                abc123@gmail.com
-              </a>
-              <a href="#about" className="footer__overlay__content__col__entry">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20.162"
-                  height="28.803"
-                  viewBox="0 0 20.162 28.803"
-                >
-                  <path
-                    id="Icon_material-location-on"
-                    data-name="Icon material-location-on"
-                    d="M17.581,3A10.074,10.074,0,0,0,7.5,13.081C7.5,20.642,17.581,31.8,17.581,31.8S27.662,20.642,27.662,13.081A10.074,10.074,0,0,0,17.581,3Zm0,13.681a3.6,3.6,0,1,1,3.6-3.6A3.6,3.6,0,0,1,17.581,16.681Z"
-                    transform="translate(-7.5 -3)"
-                    fill="#0c0e17"
-                  />
-                </svg>
-                Street no.2 ravi Mohalla Lahore Pakistan
-              </a>
+            <div className="footer__overlay__content__sub__bar"></div>
+            <div className="footer__overlay__content__sub__heading">
+              Privacy Policy
             </div>
-            <div className="footer__overlay__content__col">
-              <div className="footer__overlay__content__col__heading">
-                Socail Media
-              </div>
-              <a href="#about" className="footer__overlay__content__col__entry">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="11.186"
-                  height="21.42"
-                  viewBox="0 0 11.186 21.42"
-                >
-                  <path
-                    id="Path_11"
-                    data-name="Path 11"
-                    d="M87.259,21.421V11.662h3.332l.476-3.808H87.259V5.474c0-1.071.357-1.9,1.9-1.9h2.023V.119C90.71.119,89.52,0,88.211,0c-2.856,0-4.879,1.785-4.879,5V7.854H80v3.808h3.332v9.758Z"
-                    transform="translate(-80)"
-                    fill="#131313"
-                    fill-rule="evenodd"
-                  />
-                </svg>
-                Facebook
-              </a>
-              <a href="#about" className="footer__overlay__content__col__entry">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="21.421"
-                  height="17.375"
-                  viewBox="0 0 21.421 17.375"
-                >
-                  <path
-                    id="Path_12"
-                    data-name="Path 12"
-                    d="M44.783,19.374a12.384,12.384,0,0,0,12.5-12.5v-.6a9.673,9.673,0,0,0,2.142-2.261,9.879,9.879,0,0,1-2.5.714,4.63,4.63,0,0,0,1.9-2.38,10.915,10.915,0,0,1-2.737,1.071A4.25,4.25,0,0,0,52.875,2a4.471,4.471,0,0,0-4.4,4.4,2.32,2.32,0,0,0,.119.952,12.3,12.3,0,0,1-9.044-4.641,4.557,4.557,0,0,0-.6,2.261,4.728,4.728,0,0,0,1.9,3.689,4.012,4.012,0,0,1-2.023-.6h0a4.349,4.349,0,0,0,3.57,4.284,3.669,3.669,0,0,1-1.19.119,2.025,2.025,0,0,1-.833-.119,4.508,4.508,0,0,0,4.165,3.094,8.985,8.985,0,0,1-5.474,1.9A3.3,3.3,0,0,1,38,17.232a11.232,11.232,0,0,0,6.783,2.142"
-                    transform="translate(-38 -2)"
-                    fill="#131313"
-                    fill-rule="evenodd"
-                  />
-                </svg>
-                Twitter
-              </a>
-              <a href="#about" className="footer__overlay__content__col__entry">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="21.421"
-                  height="21.42"
-                  viewBox="0 0 21.421 21.42"
-                >
-                  <path
-                    id="Path_13"
-                    data-name="Path 13"
-                    d="M10.71,1.9a32.84,32.84,0,0,1,4.284.119,5.52,5.52,0,0,1,2.023.357A4.179,4.179,0,0,1,19.04,4.4,5.52,5.52,0,0,1,19.4,6.426c0,1.071.119,1.428.119,4.284a32.84,32.84,0,0,1-.119,4.284,5.52,5.52,0,0,1-.357,2.023,4.179,4.179,0,0,1-2.023,2.023,5.52,5.52,0,0,1-2.023.357c-1.071,0-1.428.119-4.284.119A32.84,32.84,0,0,1,6.426,19.4,5.52,5.52,0,0,1,4.4,19.04,4.179,4.179,0,0,1,2.38,17.017a5.52,5.52,0,0,1-.357-2.023c0-1.071-.119-1.428-.119-4.284a32.84,32.84,0,0,1,.119-4.284A5.52,5.52,0,0,1,2.38,4.4a4.274,4.274,0,0,1,.833-1.19A2.012,2.012,0,0,1,4.4,2.38a5.52,5.52,0,0,1,2.023-.357A32.84,32.84,0,0,1,10.71,1.9m0-1.9a35.162,35.162,0,0,0-4.4.119A7.347,7.347,0,0,0,3.689.6a4.659,4.659,0,0,0-1.9,1.19A4.659,4.659,0,0,0,.6,3.689,5.422,5.422,0,0,0,.119,6.307,35.162,35.162,0,0,0,0,10.71a35.162,35.162,0,0,0,.119,4.4A7.347,7.347,0,0,0,.6,17.731a4.659,4.659,0,0,0,1.19,1.9,4.659,4.659,0,0,0,1.9,1.19,7.347,7.347,0,0,0,2.618.476,35.162,35.162,0,0,0,4.4.119,35.162,35.162,0,0,0,4.4-.119,7.347,7.347,0,0,0,2.618-.476,4.993,4.993,0,0,0,3.094-3.094,7.347,7.347,0,0,0,.476-2.618c0-1.19.119-1.547.119-4.4a35.162,35.162,0,0,0-.119-4.4,7.347,7.347,0,0,0-.476-2.618,4.659,4.659,0,0,0-1.19-1.9A4.659,4.659,0,0,0,17.731.6,7.347,7.347,0,0,0,15.113.119,35.162,35.162,0,0,0,10.71,0m0,5.236A5.386,5.386,0,0,0,5.236,10.71,5.474,5.474,0,1,0,10.71,5.236m0,9.044a3.506,3.506,0,0,1-3.57-3.57,3.506,3.506,0,0,1,3.57-3.57,3.506,3.506,0,0,1,3.57,3.57,3.506,3.506,0,0,1-3.57,3.57M16.422,3.689A1.309,1.309,0,1,0,17.731,5a1.321,1.321,0,0,0-1.309-1.309"
-                    fill="#131313"
-                    fill-rule="evenodd"
-                  />
-                </svg>
-                Instagram
-              </a>
+            <div className="footer__overlay__content__info">
+              The Content shared on this website is for information purpose only
+              and, thus, should not be considered as financial advice.
+              Trading/Investing is risky and you should never invest more than
+              you can afford to lose. Cryptocurrencies are risky. Never invest
+              more than you can afford to lose. You alone assume the sole
+              responsibility of evaluating the merits and risks associated with
+              the use of any information or other Content on the Site before
+              making any decisions based on such information or other Content.
+              Cliff also does not promise financial gain, its purpose is to
+              invest in other assets in order to accrue income to continue
+              furthering the project and rewarding its users through other means
             </div>
           </div>
         </div>
