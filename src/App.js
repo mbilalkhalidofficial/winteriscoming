@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./App.scss";
 import Header from "./components/Header";
 import homeSectoinBg from "./assets/homeSectoinBg.png";
@@ -17,14 +17,23 @@ import step1 from "./assets/step1.png";
 import step2 from "./assets/step2.png";
 import step3 from "./assets/step3.png";
 import step4 from "./assets/step4.png";
+import "animate.css";
 
 function App() {
+  const [isAnimate, setIsAnimate] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsAnimate(window.scrollY > 96);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <div className="App">
       <Header />
       <section id="home" className="home__section">
         <img src={homeSectoinBg} alt="" className="home__section__img" />
-        <div className="home__section__overlay">
+        <div className="home__section__overlay animate__animated animate__fadeInTopLeft animate__delay-1s">
           <div className="home__section__overlay__content">
             <div className="home__section__overlay__left">
               <div className="home__section__overlay__left__heading">
@@ -58,8 +67,14 @@ function App() {
       </div>
       <section id="home" className="home__section">
         <img src={aboutSectionBg} alt="" className="home__section__img" />
-        <div className="home__section__overlay">
-          <div className="home__section__overlay__content">
+        <div className="home__section__overlay ">
+          <div
+            className={
+              isAnimate
+                ? "home__section__overlay__content animate__animated animate__fadeInRight animate__delay-1s"
+                : "home__section__overlay__content"
+            }
+          >
             <div className="home__section__overlay__left">
               <div className="home__section__overlay__left__heading">
                 Project & Ecosystem
@@ -110,7 +125,13 @@ function App() {
       </section>
       <section id="home" className="home__section">
         <img src={whoSectionBg} alt="" className="home__section__img" />
-        <div className="home__section__overlay">
+        <div
+          className={
+            isAnimate
+              ? "home__section__overlay animate__animated animate__fadeInLeft animate__delay-2s"
+              : "home__section__overlay"
+          }
+        >
           <div className="home__section__overlay__content">
             <div className="home__section__overlay__right">
               <img
@@ -153,7 +174,13 @@ function App() {
       </section>
       <section id="home" className="home__section">
         <img src={infoSectionBg} alt="" className="home__section__img" />
-        <div className="home__section__overlay">
+        <div
+          className={
+            isAnimate
+              ? "home__section__overlay animate__animated animate__fadeInRight animate__delay-3s"
+              : "home__section__overlay"
+          }
+        >
           <div className="home__section__overlay__content home__section__overlay__content__reverse">
             <div className="home__section__overlay__left">
               <div
@@ -218,7 +245,13 @@ function App() {
           alt=""
           className="home__section__img"
         />
-        <div className="home__section__overlay">
+        <div
+          className={
+            isAnimate
+              ? "home__section__overlay animate__animated animate__fadeInLeft animate__delay-4s"
+              : "home__section__overlay"
+          }
+        >
           <div className="home__section__overlay__content">
             <div
               className="home__section__overlay__left"
@@ -240,7 +273,13 @@ function App() {
             <div className="home__section__overlay__right"></div>
           </div>
         </div>
-        <div className="home__section__bottom__overlay">
+        <div
+          className={
+            isAnimate
+              ? "home__section__bottom__overlay animate__animated animate__fadeInLeft animate__delay-4s"
+              : "home__section__bottom__overlay"
+          }
+        >
           <div className="home__section__bottom__overlay__text">
             As per the stories told by old nan the emergence of the White Walker
             Inu is accompanied by the long night. The long night will last for
@@ -252,7 +291,13 @@ function App() {
         </div>
       </section>
       <section id="steps" className="steps__section">
-        <div className="steps__section__content">
+        <div
+          className={
+            isAnimate
+              ? "steps__section__content animate__animated animate__fadeInRight animate__delay-5s"
+              : "steps__section__content"
+          }
+        >
           <div className="steps__section__content__entry">
             <div className="steps__section__content__entry__header">
               <div className="steps__section__content__entry__heading__heading">
@@ -456,7 +501,15 @@ function App() {
           </div>
         </div>
       </section>
-      <section id="howtobuy" className="how__buy__section">
+      <section
+        id="howtobuy"
+        className={
+          isAnimate
+            ? "slogan__container  animate__animated animate__fadeInLeft animate__delay-6s"
+            : "slogan__container"
+        }
+        className="how__buy__section"
+      >
         <div
           className="slogan__container"
           style={{ backgroundColor: "#ffffff" }}
