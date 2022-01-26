@@ -99,10 +99,17 @@ body {
   width: 50%;
 }
 .home__section__overlay__left__heading {
-  font-size: 22px;
+  font-size: 32px;
   color: white;
   font-family: Game of Thrones;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
+  font-weight: 500;
+}
+.home__section__overlay__left__heading span {
+  background-color: #c40000;
+  padding: 0.2em;
+  padding-top: 0.3em;
+  padding-bottom: 0.1em;
 }
 .home__section__overlay__left__sub__heading {
   font-size: 16px;
@@ -124,7 +131,7 @@ body {
   justify-content: center;
 }
 .home__section__overlay__right__img {
-  width: 500px;
+  width: 280px;
 }
 .slogan__container {
   width: 100%;
@@ -174,6 +181,8 @@ body {
   flex: 1;
   max-width: 30%;
   padding: 2em;
+  padding-bottom: 3em;
+  border-bottom-right-radius: 150px;
   height: fit-content;
 }
 .roadmap__section__content__card__heading {
@@ -200,7 +209,7 @@ body {
 }
 .how__buy__section__img {
   width: 100%;
-  max-width: 700px;
+  max-width: 900px;
 }
 .bar {
   width: 100%;
@@ -257,6 +266,54 @@ body {
   width: 18px;
   height: 18px;
   margin-right: 1em;
+}
+.steps__section {
+  width: 100%;
+}
+.steps__section__content {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0em auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0em 2em;
+  flex-wrap: wrap;
+}
+.steps__section__content__entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  padding: 2em;
+}
+.steps__section__content__entry__header {
+  width: 250px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 1px solid #021024;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.steps__section__content__entry__heading__heading {
+  font-size: 18px;
+  color: #021024;
+  font-family: Game Of Thrones;
+}
+.steps__section__content__entry__heading__heading span {
+  font-size: 30px;
+}
+.steps__section__content__entry__heading__icon {
+  width: 50px;
+  margin: 0.5em 0em;
+}
+.steps__section__content__entry__heading__sub__heading {
+  font-size: 14px;
+  color: #021024;
+  font-family: Montserrat;
 }
 @media (max-width: 1200px) {
   .home__section__img {
@@ -347,5 +404,8 @@ body {
   }
   .footer__overlay__content__col {
     min-width: 100%;
+  }
+  .steps__section__content__entry {
+    padding: 2em 0em;
   }
 }

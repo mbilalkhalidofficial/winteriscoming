@@ -9,6 +9,14 @@ import howtobuy from "./assets/howtobuy.png";
 import whoSectionBg from "./assets/whoSectionBg.png";
 import footerBg from "./assets/footerBg.png";
 import img from "./assets/img.png";
+import ProjectEcosystem from "./assets/ProjectEcosystem.png";
+import WhiteWalkerInu from "./assets/WhiteWalkerInu.png";
+import infoSectionImg from "./assets/infoSectionImg.png";
+import infoSectionImgOverlay from "./assets/infoSectionImgOverlay.png";
+import step1 from "./assets/step1.png";
+import step2 from "./assets/step2.png";
+import step3 from "./assets/step3.png";
+import step4 from "./assets/step4.png";
 
 function App() {
   return (
@@ -20,7 +28,7 @@ function App() {
           <div className="home__section__overlay__content">
             <div className="home__section__overlay__left">
               <div className="home__section__overlay__left__heading">
-                Winter is coming
+                <span>Winter</span> is coming
               </div>
               <div className="home__section__overlay__left__sub__heading">
                 to the ethereum blockchain
@@ -91,23 +99,27 @@ function App() {
             </div>
             <div className="home__section__overlay__right">
               <img
-                src={img}
+                src={ProjectEcosystem}
                 alt=""
                 className="home__section__overlay__right__img"
+                style={{ width: "500px", mixBlendMode: "screen" }}
               />
             </div>
           </div>
         </div>
       </section>
-      <div className="slogan__container">
-        <div className="slogan__container__text">
-          Who is the White Walker Inu?
-        </div>
-      </div>
       <section id="home" className="home__section">
         <img src={whoSectionBg} alt="" className="home__section__img" />
         <div className="home__section__overlay">
           <div className="home__section__overlay__content">
+            <div className="home__section__overlay__right">
+              <img
+                src={WhiteWalkerInu}
+                alt=""
+                className="home__section__overlay__right__img"
+                style={{ width: "600px" }}
+              />
+            </div>
             <div className="home__section__overlay__left">
               <div className="home__section__overlay__left__heading">
                 Who is the White Walker Inu?
@@ -136,13 +148,6 @@ function App() {
                 </p>
               </div>
             </div>
-            <div className="home__section__overlay__right">
-              <img
-                src={img}
-                alt=""
-                className="home__section__overlay__right__img"
-              />
-            </div>
           </div>
         </div>
       </section>
@@ -150,21 +155,23 @@ function App() {
         <img src={infoSectionBg} alt="" className="home__section__img" />
         <div className="home__section__overlay">
           <div className="home__section__overlay__content home__section__overlay__content__reverse">
-            <div className="home__section__overlay__right">
-              <img
-                src={img}
-                alt=""
-                className="home__section__overlay__right__img"
-              />
-            </div>
             <div className="home__section__overlay__left">
-              <div className="home__section__overlay__left__heading">
+              <div
+                className="home__section__overlay__left__heading"
+                style={{ color: "#1C1C1C" }}
+              >
                 What does the White
               </div>
-              <div className="home__section__overlay__left__heading">
+              <div
+                className="home__section__overlay__left__heading"
+                style={{ color: "#1C1C1C" }}
+              >
                 Walker Inu ($WINU) Want?
               </div>
-              <div className="home__section__overlay__left__info">
+              <div
+                className="home__section__overlay__left__info"
+                style={{ color: "#1C1C1C" }}
+              >
                 <p>
                   The White Walker Inu ($WINU) came from the lands of always
                   winter and is the first of the white walkers also known as the
@@ -183,6 +190,24 @@ function App() {
                   Ethereum and go to the moon and beyond!
                 </p>
               </div>
+            </div>
+            <div className="home__section__overlay__right">
+              <img
+                src={infoSectionImg}
+                alt=""
+                className="home__section__overlay__right__img"
+                style={{ width: "500px", mixBlendMode: "color-dodge" }}
+              />
+              <img
+                src={infoSectionImgOverlay}
+                alt=""
+                className="home__section__overlay__right__img"
+                style={{
+                  width: "500px",
+
+                  position: "absolute",
+                }}
+              />
             </div>
           </div>
         </div>
@@ -223,6 +248,106 @@ function App() {
             during which the sale tax will be 25% This is to punish early
             sellers and reward our strong diamond handed dead army, while at the
             same time incentivising holding and a positive boost on price.
+          </div>
+        </div>
+      </section>
+      <section id="steps" className="steps__section">
+        <div className="steps__section__content">
+          <div className="steps__section__content__entry">
+            <div className="steps__section__content__entry__header">
+              <div className="steps__section__content__entry__heading__heading">
+                Step <span>1</span>
+              </div>
+              <img
+                src={step1}
+                alt=""
+                className="steps__section__content__entry__heading__icon"
+              />
+              <div className="steps__section__content__entry__heading__sub__heading">
+                Create MetaMask Wallet
+              </div>
+            </div>
+            <div className="steps__section__content__entry__info">
+              As per the stories told by old nan the emergence of the White
+              Walker Inu is accompanied by the long night. The long night will
+              last for 24 hours from the time of emergence of the White Walker
+              Inu ($WINU) during which the sale tax will be 25% This is to
+              punish early sellers and reward our strong diamond handed dead
+              army, while at the same time incentivising holding and a positive
+              boost on price.
+            </div>
+          </div>
+          <div className="steps__section__content__entry">
+            <div className="steps__section__content__entry__header">
+              <div className="steps__section__content__entry__heading__heading">
+                Step <span>2</span>
+              </div>
+              <img
+                src={step2}
+                alt=""
+                className="steps__section__content__entry__heading__icon"
+              />
+              <div className="steps__section__content__entry__heading__sub__heading">
+                Send ETH to Metamask
+              </div>
+            </div>
+            <div className="steps__section__content__entry__info">
+              As per the stories told by old nan the emergence of the White
+              Walker Inu is accompanied by the long night. The long night will
+              last for 24 hours from the time of emergence of the White Walker
+              Inu ($WINU) during which the sale tax will be 25% This is to
+              punish early sellers and reward our strong diamond handed dead
+              army, while at the same time incentivising holding and a positive
+              boost on price.
+            </div>
+          </div>
+          <div className="steps__section__content__entry">
+            <div className="steps__section__content__entry__header">
+              <div className="steps__section__content__entry__heading__heading">
+                Step <span>3</span>
+              </div>
+              <img
+                src={step3}
+                alt=""
+                className="steps__section__content__entry__heading__icon"
+              />
+              <div className="steps__section__content__entry__heading__sub__heading">
+                Connect to Uniswap
+              </div>
+            </div>
+            <div className="steps__section__content__entry__info">
+              As per the stories told by old nan the emergence of the White
+              Walker Inu is accompanied by the long night. The long night will
+              last for 24 hours from the time of emergence of the White Walker
+              Inu ($WINU) during which the sale tax will be 25% This is to
+              punish early sellers and reward our strong diamond handed dead
+              army, while at the same time incentivising holding and a positive
+              boost on price.
+            </div>
+          </div>
+          <div className="steps__section__content__entry">
+            <div className="steps__section__content__entry__header">
+              <div className="steps__section__content__entry__heading__heading">
+                Step <span>4</span>
+              </div>
+              <img
+                src={step4}
+                alt=""
+                className="steps__section__content__entry__heading__icon"
+              />
+              <div className="steps__section__content__entry__heading__sub__heading">
+                Swap your ETH for Play
+              </div>
+            </div>
+            <div className="steps__section__content__entry__info">
+              As per the stories told by old nan the emergence of the White
+              Walker Inu is accompanied by the long night. The long night will
+              last for 24 hours from the time of emergence of the White Walker
+              Inu ($WINU) during which the sale tax will be 25% This is to
+              punish early sellers and reward our strong diamond handed dead
+              army, while at the same time incentivising holding and a positive
+              boost on price.
+            </div>
           </div>
         </div>
       </section>
@@ -348,6 +473,7 @@ function App() {
         </div>
         <img src={howtobuy} alt="" className="how__buy__section__img" />
       </section>
+
       <div className="bar"></div>
       <div className="footer">
         <img src={footerBg} alt="" className="footer__img" />
