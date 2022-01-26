@@ -71,14 +71,14 @@ function App() {
       <section id="home" className="home__section">
         <img src={aboutSectionBg} alt="" className="home__section__img" />
         <div className="home__section__overlay ">
-          <div
-            className={
-              isAnimate
-                ? "home__section__overlay__content animate__animated animate__fadeIn animate__delay-1s"
-                : "home__section__overlay__content"
-            }
-          >
-            <div className="home__section__overlay__left">
+          <div className="home__section__overlay__content">
+            <div
+              className={
+                isAnimate
+                  ? "home__section__overlay__left animate__animated animate__fadeIn animate__delay-1s"
+                  : "home__section__overlay__left"
+              }
+            >
               <div className="home__section__overlay__left__heading">
                 Project & Ecosystem
               </div>
@@ -128,13 +128,7 @@ function App() {
       </section>
       <section id="home" className="home__section">
         <img src={whoSectionBg} alt="" className="home__section__img" />
-        <div
-          className={
-            isAnimate
-              ? "home__section__overlay animate__animated animate__fadeIn animate__delay-2s"
-              : "home__section__overlay"
-          }
-        >
+        <div className="home__section__overlay">
           <div className="home__section__overlay__content">
             <div className="home__section__overlay__right">
               <img
@@ -144,7 +138,13 @@ function App() {
                 style={{ width: "600px" }}
               />
             </div>
-            <div className="home__section__overlay__left">
+            <div
+              className={
+                isAnimate
+                  ? "home__section__overlay__left  animate__animated animate__fadeIn animate__delay-2s"
+                  : "home__section__overlay__left"
+              }
+            >
               <div className="home__section__overlay__left__heading">
                 Who is the White Walker Inu?
               </div>
@@ -177,15 +177,15 @@ function App() {
       </section>
       <section id="home" className="home__section">
         <img src={infoSectionBg} alt="" className="home__section__img" />
-        <div
-          className={
-            isAnimate
-              ? "home__section__overlay animate__animated animate__fadeIn animate__delay-3s"
-              : "home__section__overlay"
-          }
-        >
+        <div className="home__section__overlay">
           <div className="home__section__overlay__content home__section__overlay__content__reverse">
-            <div className="home__section__overlay__left">
+            <div
+              className={
+                isAnimate
+                  ? "home__section__overlay__left animate__animated animate__fadeIn animate__delay-3s"
+                  : "home__section__overlay__left"
+              }
+            >
               <div
                 className="home__section__overlay__left__heading"
                 style={{ color: "#1C1C1C" }}
