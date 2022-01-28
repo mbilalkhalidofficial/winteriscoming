@@ -9,6 +9,7 @@ import howtobuy from "./assets/howtobuy.png";
 import whoSectionBg from "./assets/whoSectionBg.png";
 import footerBg from "./assets/footerBg.png";
 import img from "./assets/img.png";
+import music from "./assets/music.3gp";
 import ProjectEcosystem from "./assets/ProjectEcosystem.png";
 import WhiteWalkerInu from "./assets/WhiteWalkerInu.png";
 import infoSectionImg from "./assets/infoSectionImg.png";
@@ -21,16 +22,17 @@ import "animate.css";
 
 function App() {
   const [isAnimate, setIsAnimate] = useState(false);
+  const [videoSound, setVideoSound] = useState(true);
   useEffect(() => {
     const handleScroll = () => {
+      document.getElementById("player").play();
       setIsAnimate(window.scrollY > 96);
     };
     window.addEventListener("scroll", handleScroll);
+
     return () => window.removeEventListener("scroll", handleScroll);
-    document
-      .querySelector("animate__animated")
-      .style.setProperty("--animate-duration", "2s");
   }, []);
+
   return (
     <div className="App">
       <Header />
@@ -62,6 +64,7 @@ function App() {
           </div>
         </div>
       </section>
+      <video src={music} id="player" style={{ display: "none" }}></video>
       <div className="slogan__container">
         <div className="slogan__container__text">
           White Walker Inu ($WINU) has a strong community comprised of the army
@@ -529,7 +532,6 @@ function App() {
         </div>
         <img src={howtobuy} alt="" className="how__buy__section__img" />
       </section>
-
       <div className="bar"></div>
       <div className="footer">
         <img src={footerBg} alt="" className="footer__img" />
