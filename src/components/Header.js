@@ -70,17 +70,14 @@ export default function Header() {
             <a href="#about" className="header__wrapper__nav__link">
               About
             </a>
-            <a href="#tokenomics" className="header__wrapper__nav__link">
-              Tokenomics
-            </a>
             <a href="#longnignt" className="header__wrapper__nav__link">
               Long Night
             </a>
+            <a href="#tokenomics" className="header__wrapper__nav__link">
+              Tokenomics
+            </a>
             <a href="#roadmap" className="header__wrapper__nav__link">
               Roadmap
-            </a>
-            <a href="#dashboard" className="header__wrapper__nav__link">
-              Dashboard
             </a>
             <a href="#howtobuy" className="header__wrapper__nav__link">
               How to buy

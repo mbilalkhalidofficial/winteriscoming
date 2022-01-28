@@ -18,6 +18,7 @@
 *::after,
 *::before {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -329,6 +330,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .steps__section__content__entry__heading__heading {
   font-size: 18px;
@@ -346,6 +348,17 @@ body {
   font-size: 14px;
   color: #021024;
   font-family: Montserrat;
+}
+.steps__section__content__entry__header:hover {
+  transition: 300ms ease-in-out;
+  background-color: #021024;
+}
+.steps__section__content__entry__header:hover
+  .steps__section__content__entry__heading__heading,
+.steps__section__content__entry__header:hover
+  .steps__section__content__entry__heading__sub__heading {
+  transition: 300ms ease-in-out;
+  color: white;
 }
 @media (max-width: 1200px) {
   .home__section__img {
@@ -392,6 +405,7 @@ body {
   .home__section__overlay__left__sub__heading {
     line-height: 32px;
   }
+
   .home__section__overlay__left__info {
     width: 100%;
   }

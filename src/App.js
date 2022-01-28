@@ -19,10 +19,10 @@ import step2 from "./assets/step2.png";
 import step3 from "./assets/step3.png";
 import step4 from "./assets/step4.png";
 import "animate.css";
+import Typewriter from "typewriter-effect";
 
 function App() {
   const [isAnimate, setIsAnimate] = useState(false);
-  const [videoSound, setVideoSound] = useState(true);
   useEffect(() => {
     const handleScroll = () => {
       document.getElementById("player").play();
@@ -42,7 +42,14 @@ function App() {
           <div className="home__section__overlay__content">
             <div className="home__section__overlay__left">
               <div className="home__section__overlay__left__heading">
-                <span>Winter</span> is coming
+                <Typewriter
+                  options={{
+                    strings: ["Winter is coming", "Winter is coming"],
+                    autoStart: true,
+                    loop: true,
+                    delay: 100,
+                  }}
+                />
               </div>
               <div className="home__section__overlay__left__sub__heading">
                 to the ethereum blockchain
@@ -105,12 +112,10 @@ function App() {
                   project.
                 </p>
                 <p>
-                  ($WINU) solves this by investing a percentage of the marketing
+                  ($WINU) solves this by investing a percentage of the treasury
                   wallet into yield bearing assets; with profits generated being
-                  reintroduced back into the project in the form of
-                </p>
-                <p>
-                  token price growth, further development, extensive marketing.
+                  reintroduced back into the project in the form of token price
+                  growth, further development, extensive marketing.
                 </p>
                 <p>
                   This thus results in increasing the profile of the project and
@@ -129,7 +134,7 @@ function App() {
           </div>
         </div>
       </section>
-      <section id="home" className="home__section">
+      <section id="about" className="home__section">
         <img src={whoSectionBg} alt="" className="home__section__img" />
         <div className="home__section__overlay">
           <div className="home__section__overlay__content">
@@ -245,7 +250,7 @@ function App() {
           </div>
         </div>
       </section>
-      <section id="home" className="home__section">
+      <section id="longnignt" className="home__section">
         <img
           src={understandingSectionBg}
           alt=""
@@ -296,7 +301,22 @@ function App() {
           </div>
         </div>
       </section>
-      <section id="steps" className="steps__section">
+
+      <section id="howtobuy" className="steps__section">
+        <div
+          className="slogan__container"
+          style={{ backgroundColor: "#ffffff" }}
+        >
+          <div
+            className="slogan__container__text"
+            style={{
+              color: "#131313",
+              fontSize: 16,
+            }}
+          >
+            How to Buy?
+          </div>
+        </div>
         <div
           className={
             isAnimate
@@ -402,7 +422,11 @@ function App() {
           </div>
         </div>
       </section>
-      <div className="slogan__container" style={{ backgroundColor: "#ffffff" }}>
+      <section
+        id="roadmap"
+        className="slogan__container"
+        style={{ backgroundColor: "#ffffff" }}
+      >
         <div
           className="slogan__container__text"
           style={{
@@ -412,18 +436,15 @@ function App() {
         >
           Roadmap
         </div>
-      </div>
-      <section id="home" className="roadmap__section">
+      </section>
+      <div className="roadmap__section">
         <div className="roadmap__section__content">
           <div className="roadmap__section__content__card">
             <div className="roadmap__section__content__card__heading">
               Phase <span>1</span>
             </div>
             <div className="roadmap__section__content__card__entry">
-              Token launch (Stealth and/or fair
-            </div>
-            <div className="roadmap__section__content__card__entry">
-              launch on Uniswap).
+              Token launch (Stealth and/or fair launch on Uniswap).
             </div>
             <div className="roadmap__section__content__card__entry">
               Telegram launch.
@@ -464,22 +485,19 @@ function App() {
               Mass marketing campaigns.
             </div>
             <div className="roadmap__section__content__card__entry">
-              Regular community contests & vgiveaways.
+              Regular community contests & giveaways.
             </div>
             <div className="roadmap__section__content__card__entry">
-              Creating revenue generation
+              Creating revenue generation.
             </div>
             <div className="roadmap__section__content__card__entry">
-              streams via investments.
+              Streams via investments.
             </div>
             <div className="roadmap__section__content__card__entry">
               DApp dashboard.
             </div>
             <div className="roadmap__section__content__card__entry">
-              Certik audit.
-            </div>
-            <div className="roadmap__section__content__card__entry">
-              50,000 holders
+              50,000 holders.
             </div>
           </div>
           <div className="roadmap__section__content__card">
@@ -496,19 +514,19 @@ function App() {
               CEX listings.
             </div>
             <div className="roadmap__section__content__card__entry">
-              Strategic partnerships
+              Strategic partnerships.
             </div>
             <div className="roadmap__section__content__card__entry">
               DAO features.
             </div>
             <div className="roadmap__section__content__card__entry">
-              100,000 holders
+              100,000 holders.
             </div>
           </div>
         </div>
-      </section>
+      </div>
       <section
-        id="howtobuy"
+        id="tokenomics"
         className={
           isAnimate
             ? "slogan__container  animate__animated animate__fadeIn animate__delay-6s"
@@ -527,7 +545,7 @@ function App() {
               fontSize: 16,
             }}
           >
-            How to Buy?
+            Tokenomics
           </div>
         </div>
         <img src={howtobuy} alt="" className="how__buy__section__img" />
@@ -544,8 +562,8 @@ function App() {
               Whitewalkerinu information
             </div>
             <div className="footer__overlay__content__info">
-              We invite you yo join our Telegram group, where you can interact
-              with us, and Thousands of other members of the Whitewalkerinu.
+              We invite you to join our Telegram group, where you can interact
+              with us, and thousands of other members of the Whitewalkerinu.
             </div>
             <div className="footer__overlay__content__links">
               <a href="#" className="footer__overlay__content__links__link">
@@ -570,14 +588,14 @@ function App() {
               The Content shared on this website is for information purpose only
               and, thus, should not be considered as financial advice.
               Trading/Investing is risky and you should never invest more than
-              you can afford to lose. Cryptocurrencies are risky. Never invest
-              more than you can afford to lose. You alone assume the sole
-              responsibility of evaluating the merits and risks associated with
-              the use of any information or other Content on the Site before
-              making any decisions based on such information or other Content.
-              Cliff also does not promise financial gain, its purpose is to
-              invest in other assets in order to accrue income to continue
-              furthering the project and rewarding its users through other means
+              you can afford to lose. You alone assume the sole responsibility
+              of evaluating the merits and risks associated with the use of any
+              information or other Content on the Site before making any
+              decisions based on such information or other Content.
+              Whitewalkerinu also does not promise financial gain, its purpose
+              is to invest in other assets in order to accrue income to continue
+              furthering the project and rewarding its users through other
+              means.
             </div>
           </div>
         </div>
