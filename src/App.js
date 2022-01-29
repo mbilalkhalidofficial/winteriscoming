@@ -44,7 +44,10 @@ function App() {
               <div className="home__section__overlay__left__heading">
                 <Typewriter
                   options={{
-                    strings: ["Winter is coming", "Winter is coming"],
+                    strings: [
+                      "Winter is coming . . .",
+                      "Winter is coming . . .",
+                    ],
                     autoStart: true,
                     loop: true,
                     delay: 100,
@@ -190,7 +193,7 @@ function App() {
             <div
               className={
                 isAnimate
-                  ? "home__section__overlay__left animate__animated animate__fadeIn animate__delay-3s"
+                  ? "home__section__overlay__left animate__animated animate__fadeIn animate__delay-2s"
                   : "home__section__overlay__left"
               }
             >
@@ -259,7 +262,7 @@ function App() {
         <div
           className={
             isAnimate
-              ? "home__section__overlay animate__animated animate__fadeIn animate__delay-4s"
+              ? "home__section__overlay animate__animated animate__fadeIn animate__delay-2s"
               : "home__section__overlay"
           }
         >
@@ -287,7 +290,7 @@ function App() {
         <div
           className={
             isAnimate
-              ? "home__section__bottom__overlay animate__animated animate__fadeIn animate__delay-4s"
+              ? "home__section__bottom__overlay animate__animated animate__fadeIn animate__delay-2s"
               : "home__section__bottom__overlay"
           }
         >
@@ -305,7 +308,7 @@ function App() {
         id="tokenomics"
         className={
           isAnimate
-            ? "slogan__container  animate__animated animate__fadeIn animate__delay-6s"
+            ? "slogan__container  animate__animated animate__fadeIn animate__delay-2s"
             : "slogan__container"
         }
         className="how__buy__section"
@@ -445,13 +448,7 @@ function App() {
             How to Buy?
           </div>
         </div>
-        <div
-          className={
-            isAnimate
-              ? "steps__section__content animate__animated animate__fadeIn animate__delay-5s"
-              : "steps__section__content"
-          }
-        >
+        <div className="steps__section__content">
           <div className="steps__section__content__entry">
             <div className="steps__section__content__entry__header">
               <div className="steps__section__content__entry__heading__heading">
