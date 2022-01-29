@@ -341,7 +341,16 @@ body {
   font-size: 30px;
 }
 .steps__section__content__entry__heading__icon {
-  width: 50px;
+  width: 40px;
+}
+.steps__section__content__entry__heading__icon__bg {
+  width: 55px;
+  height: 55px;
+  border-radius: 55px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0.5em 0em;
 }
 .steps__section__content__entry__heading__sub__heading {
@@ -469,5 +478,8 @@ body {
   }
   .steps__section__content__entry {
     padding: 2em 0em;
+  }
+  .footer__img {
+    height: 750px;
   }
 }

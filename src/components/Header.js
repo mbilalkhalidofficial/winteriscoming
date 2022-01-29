@@ -4,6 +4,13 @@ export default function Header() {
   const [isMobile, setIsMobile] = useState(false);
   const [isNavOpen, setIsNavOpen] = useState(true);
   useEffect(() => {
+    if (window.innerWidth <= 800) {
+      setIsMobile(true);
+      setIsNavOpen(false);
+    } else {
+      setIsMobile(false);
+      setIsNavOpen(true);
+    }
     window.addEventListener("resize", () => {
       if (window.innerWidth <= 800) {
         setIsMobile(true);
@@ -13,7 +20,7 @@ export default function Header() {
         setIsNavOpen(true);
       }
     });
-  });
+  }, []);
 
   return (
     <div

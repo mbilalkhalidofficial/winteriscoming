@@ -301,8 +301,15 @@ function App() {
           </div>
         </div>
       </section>
-
-      <section id="howtobuy" className="steps__section">
+      <section
+        id="tokenomics"
+        className={
+          isAnimate
+            ? "slogan__container  animate__animated animate__fadeIn animate__delay-6s"
+            : "slogan__container"
+        }
+        className="how__buy__section"
+      >
         <div
           className="slogan__container"
           style={{ backgroundColor: "#ffffff" }}
@@ -314,114 +321,12 @@ function App() {
               fontSize: 16,
             }}
           >
-            How to Buy?
+            Tokenomics
           </div>
         </div>
-        <div
-          className={
-            isAnimate
-              ? "steps__section__content animate__animated animate__fadeIn animate__delay-5s"
-              : "steps__section__content"
-          }
-        >
-          <div className="steps__section__content__entry">
-            <div className="steps__section__content__entry__header">
-              <div className="steps__section__content__entry__heading__heading">
-                Step <span>1</span>
-              </div>
-              <img
-                src={step1}
-                alt=""
-                className="steps__section__content__entry__heading__icon"
-              />
-              <div className="steps__section__content__entry__heading__sub__heading">
-                Create MetaMask Wallet
-              </div>
-            </div>
-            <div className="steps__section__content__entry__info">
-              As per the stories told by old nan the emergence of the White
-              Walker Inu is accompanied by the long night. The long night will
-              last for 24 hours from the time of emergence of the White Walker
-              Inu ($WINU) during which the sale tax will be 25% This is to
-              punish early sellers and reward our strong diamond handed dead
-              army, while at the same time incentivising holding and a positive
-              boost on price.
-            </div>
-          </div>
-          <div className="steps__section__content__entry">
-            <div className="steps__section__content__entry__header">
-              <div className="steps__section__content__entry__heading__heading">
-                Step <span>2</span>
-              </div>
-              <img
-                src={step2}
-                alt=""
-                className="steps__section__content__entry__heading__icon"
-              />
-              <div className="steps__section__content__entry__heading__sub__heading">
-                Send ETH to Metamask
-              </div>
-            </div>
-            <div className="steps__section__content__entry__info">
-              As per the stories told by old nan the emergence of the White
-              Walker Inu is accompanied by the long night. The long night will
-              last for 24 hours from the time of emergence of the White Walker
-              Inu ($WINU) during which the sale tax will be 25% This is to
-              punish early sellers and reward our strong diamond handed dead
-              army, while at the same time incentivising holding and a positive
-              boost on price.
-            </div>
-          </div>
-          <div className="steps__section__content__entry">
-            <div className="steps__section__content__entry__header">
-              <div className="steps__section__content__entry__heading__heading">
-                Step <span>3</span>
-              </div>
-              <img
-                src={step3}
-                alt=""
-                className="steps__section__content__entry__heading__icon"
-              />
-              <div className="steps__section__content__entry__heading__sub__heading">
-                Connect to Uniswap
-              </div>
-            </div>
-            <div className="steps__section__content__entry__info">
-              As per the stories told by old nan the emergence of the White
-              Walker Inu is accompanied by the long night. The long night will
-              last for 24 hours from the time of emergence of the White Walker
-              Inu ($WINU) during which the sale tax will be 25% This is to
-              punish early sellers and reward our strong diamond handed dead
-              army, while at the same time incentivising holding and a positive
-              boost on price.
-            </div>
-          </div>
-          <div className="steps__section__content__entry">
-            <div className="steps__section__content__entry__header">
-              <div className="steps__section__content__entry__heading__heading">
-                Step <span>4</span>
-              </div>
-              <img
-                src={step4}
-                alt=""
-                className="steps__section__content__entry__heading__icon"
-              />
-              <div className="steps__section__content__entry__heading__sub__heading">
-                Swap your ETH for Play
-              </div>
-            </div>
-            <div className="steps__section__content__entry__info">
-              As per the stories told by old nan the emergence of the White
-              Walker Inu is accompanied by the long night. The long night will
-              last for 24 hours from the time of emergence of the White Walker
-              Inu ($WINU) during which the sale tax will be 25% This is to
-              punish early sellers and reward our strong diamond handed dead
-              army, while at the same time incentivising holding and a positive
-              boost on price.
-            </div>
-          </div>
-        </div>
+        <img src={howtobuy} alt="" className="how__buy__section__img" />
       </section>
+
       <section
         id="roadmap"
         className="slogan__container"
@@ -525,15 +430,7 @@ function App() {
           </div>
         </div>
       </div>
-      <section
-        id="tokenomics"
-        className={
-          isAnimate
-            ? "slogan__container  animate__animated animate__fadeIn animate__delay-6s"
-            : "slogan__container"
-        }
-        className="how__buy__section"
-      >
+      <section id="howtobuy" className="steps__section">
         <div
           className="slogan__container"
           style={{ backgroundColor: "#ffffff" }}
@@ -545,11 +442,123 @@ function App() {
               fontSize: 16,
             }}
           >
-            Tokenomics
+            How to Buy?
           </div>
         </div>
-        <img src={howtobuy} alt="" className="how__buy__section__img" />
+        <div
+          className={
+            isAnimate
+              ? "steps__section__content animate__animated animate__fadeIn animate__delay-5s"
+              : "steps__section__content"
+          }
+        >
+          <div className="steps__section__content__entry">
+            <div className="steps__section__content__entry__header">
+              <div className="steps__section__content__entry__heading__heading">
+                Step <span>1</span>
+              </div>
+              <div className="steps__section__content__entry__heading__icon__bg">
+                <img
+                  src={step1}
+                  alt=""
+                  className="steps__section__content__entry__heading__icon"
+                />
+              </div>
+              <div className="steps__section__content__entry__heading__sub__heading">
+                Create MetaMask Wallet
+              </div>
+            </div>
+            <div className="steps__section__content__entry__info">
+              As per the stories told by old nan the emergence of the White
+              Walker Inu is accompanied by the long night. The long night will
+              last for 24 hours from the time of emergence of the White Walker
+              Inu ($WINU) during which the sale tax will be 25% This is to
+              punish early sellers and reward our strong diamond handed dead
+              army, while at the same time incentivising holding and a positive
+              boost on price.
+            </div>
+          </div>
+          <div className="steps__section__content__entry">
+            <div className="steps__section__content__entry__header">
+              <div className="steps__section__content__entry__heading__heading">
+                Step <span>2</span>
+              </div>
+              <div className="steps__section__content__entry__heading__icon__bg">
+                <img
+                  src={step2}
+                  alt=""
+                  className="steps__section__content__entry__heading__icon"
+                />
+              </div>
+              <div className="steps__section__content__entry__heading__sub__heading">
+                Send ETH to Metamask
+              </div>
+            </div>
+            <div className="steps__section__content__entry__info">
+              As per the stories told by old nan the emergence of the White
+              Walker Inu is accompanied by the long night. The long night will
+              last for 24 hours from the time of emergence of the White Walker
+              Inu ($WINU) during which the sale tax will be 25% This is to
+              punish early sellers and reward our strong diamond handed dead
+              army, while at the same time incentivising holding and a positive
+              boost on price.
+            </div>
+          </div>
+          <div className="steps__section__content__entry">
+            <div className="steps__section__content__entry__header">
+              <div className="steps__section__content__entry__heading__heading">
+                Step <span>3</span>
+              </div>
+              <div className="steps__section__content__entry__heading__icon__bg">
+                <img
+                  src={step3}
+                  alt=""
+                  className="steps__section__content__entry__heading__icon"
+                />
+              </div>
+              <div className="steps__section__content__entry__heading__sub__heading">
+                Connect to Uniswap
+              </div>
+            </div>
+            <div className="steps__section__content__entry__info">
+              As per the stories told by old nan the emergence of the White
+              Walker Inu is accompanied by the long night. The long night will
+              last for 24 hours from the time of emergence of the White Walker
+              Inu ($WINU) during which the sale tax will be 25% This is to
+              punish early sellers and reward our strong diamond handed dead
+              army, while at the same time incentivising holding and a positive
+              boost on price.
+            </div>
+          </div>
+          <div className="steps__section__content__entry">
+            <div className="steps__section__content__entry__header">
+              <div className="steps__section__content__entry__heading__heading">
+                Step <span>4</span>
+              </div>
+              <div className="steps__section__content__entry__heading__icon__bg">
+                <img
+                  src={step4}
+                  alt=""
+                  className="steps__section__content__entry__heading__icon"
+                />
+              </div>
+              <div className="steps__section__content__entry__heading__sub__heading">
+                Swap your ETH for Play
+              </div>
+            </div>
+            <div className="steps__section__content__entry__info">
+              As per the stories told by old nan the emergence of the White
+              Walker Inu is accompanied by the long night. The long night will
+              last for 24 hours from the time of emergence of the White Walker
+              Inu ($WINU) during which the sale tax will be 25% This is to
+              punish early sellers and reward our strong diamond handed dead
+              army, while at the same time incentivising holding and a positive
+              boost on price.
+            </div>
+          </div>
+        </div>
       </section>
+
       <div className="bar"></div>
       <div className="footer">
         <img src={footerBg} alt="" className="footer__img" />
