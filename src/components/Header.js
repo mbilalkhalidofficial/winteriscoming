@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import logo from "../assets/logo.svg";
 
 export default function Header() {
   const [isMobile, setIsMobile] = useState(false);
@@ -29,7 +30,7 @@ export default function Header() {
     >
       <div className="header__wrapper">
         <a href="#home" className="header__wrapper__logo">
-          white walker inu
+          <img src={logo} alt="logo" className="header__wrapper__logo__img" />
         </a>
         <button
           className="header__wrapper__menu"

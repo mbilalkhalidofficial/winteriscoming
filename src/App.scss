@@ -369,6 +369,10 @@ body {
   transition: 300ms ease-in-out;
   color: white;
 }
+.header__wrapper__logo__img {
+  height: 80px;
+  margin-top: 2em;
+}
 @media (max-width: 1200px) {
   .home__section__img {
     width: 110%;
