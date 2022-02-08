@@ -7,6 +7,10 @@ import infoSectionBg from "./assets/infoSectionBg.png";
 import understandingSectionBg from "./assets/understandingSectionBg.png";
 import howtobuy from "./assets/howtobuy.png";
 import whoSectionBg from "./assets/whoSectionBg.png";
+import chartSvg from "./assets/chartSvg.svg";
+import entherscanSvg from "./assets/entherscanSvg.svg";
+import telegramSvg from "./assets/telegramSvg.svg";
+import twitterSvg from "./assets/twitterSvg.svg";
 import footerBg from "./assets/footerBg.png";
 import img from "./assets/img.png";
 import music from "./assets/music.3gp";
@@ -20,6 +24,7 @@ import step3 from "./assets/step3.png";
 import step4 from "./assets/step4.png";
 import "animate.css";
 import Typewriter from "typewriter-effect";
+import { Link } from "react-router-dom";
 
 function App() {
   const [isAnimate, setIsAnimate] = useState(false);
@@ -62,6 +67,40 @@ function App() {
                 Ethereum Blockchain designed to constantly create buy pressure
                 all the while reducing the supply with the use of deflationary
                 techniques and additional revenue generation for the ecosystem.
+              </div>
+              <div className="home__section__overlay__left__btn__container">
+                <a href="/" className="home__section__overlay__left__btn">
+                  <img
+                    src={chartSvg}
+                    alt="chartSvg"
+                    className="home__section__overlay__left__btn__img"
+                  />
+                  Chart
+                </a>
+                <a href="/" className="home__section__overlay__left__btn">
+                  <img
+                    src={entherscanSvg}
+                    alt="entherscanSvg"
+                    className="home__section__overlay__left__btn__img"
+                  />
+                  Entherscan
+                </a>
+                <a href="/" className="home__section__overlay__left__btn">
+                  <img
+                    src={telegramSvg}
+                    alt="telegramSvg"
+                    className="home__section__overlay__left__btn__img"
+                  />
+                  Telegram
+                </a>
+                <a href="/" className="home__section__overlay__left__btn">
+                  <img
+                    src={twitterSvg}
+                    alt="twitterSvg"
+                    className="home__section__overlay__left__btn__img"
+                  />
+                  Twitter
+                </a>
               </div>
             </div>
             <div className="home__section__overlay__right">
@@ -118,7 +157,7 @@ function App() {
                   ($WINU) solves this by investing a percentage of the treasury
                   wallet into yield bearing assets; with profits generated being
                   reintroduced back into the project in the form of token price
-                  growth, further development, extensive marketing.
+                  growth, further development & extensive marketing.
                 </p>
                 <p>
                   This thus results in increasing the profile of the project and
@@ -355,6 +394,9 @@ function App() {
               Token launch (Stealth and/or fair launch on Uniswap).
             </div>
             <div className="roadmap__section__content__card__entry">
+              Etherscan verification.
+            </div>
+            <div className="roadmap__section__content__card__entry">
               Telegram launch.
             </div>
             <div className="roadmap__section__content__card__entry">
@@ -377,9 +419,6 @@ function App() {
             </div>
             <div className="roadmap__section__content__card__entry">
               CoinMarketCap listing.
-            </div>
-            <div className="roadmap__section__content__card__entry">
-              Etherscan verification.
             </div>
             <div className="roadmap__section__content__card__entry">
               1,000 holders.
@@ -471,8 +510,8 @@ function App() {
               last for 24 hours from the time of emergence of the White Walker
               Inu ($WINU) during which the sale tax will be 25% This is to
               punish early sellers and reward our strong diamond handed dead
-              army, while at the same time incentivising holding and a positive
-              boost on price.
+              army, while at the same time incentivising holding and having a
+              positive boost on price.
             </div>
           </div>
           <div className="steps__section__content__entry">
