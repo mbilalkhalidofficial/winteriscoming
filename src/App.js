@@ -5,7 +5,7 @@ import homeSectoinBg from "./assets/homeSectoinBg.png";
 import aboutSectionBg from "./assets/aboutSectionBg.png";
 import infoSectionBg from "./assets/infoSectionBg.png";
 import understandingSectionBg from "./assets/understandingSectionBg.png";
-import howtobuy from "./assets/howtobuy.png";
+import howtobuy from "./assets/howtobuy.jpeg";
 import whoSectionBg from "./assets/whoSectionBg.png";
 import chartSvg from "./assets/chartSvg.svg";
 import entherscanSvg from "./assets/entherscanSvg.svg";
