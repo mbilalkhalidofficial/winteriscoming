@@ -339,7 +339,8 @@ function App() {
             24 hours from the time of emergence of the White Walker Inu ($WINU)
             during which the sale tax will be 25% This is to punish early
             sellers and reward our strong diamond handed dead army, while at the
-            same time incentivising holding and a positive boost on price.
+            same time incentivising holding and having a positive boost on
+            price.
           </div>
         </div>
       </section>
@@ -435,10 +436,7 @@ function App() {
               Regular community contests & giveaways.
             </div>
             <div className="roadmap__section__content__card__entry">
-              Creating revenue generation.
-            </div>
-            <div className="roadmap__section__content__card__entry">
-              Streams via investments.
+              Creating revenue generation streams via investments.
             </div>
             <div className="roadmap__section__content__card__entry">
               DApp dashboard.
