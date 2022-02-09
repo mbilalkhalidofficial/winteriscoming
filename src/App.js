@@ -8,6 +8,8 @@ import understandingSectionBg from "./assets/understandingSectionBg.png";
 import howtobuy from "./assets/howtobuy.jpeg";
 import whoSectionBg from "./assets/whoSectionBg.png";
 import chartSvg from "./assets/chartSvg.svg";
+import buy from "./assets/buy.svg";
+import dil from "./assets/dil.svg";
 import entherscanSvg from "./assets/entherscanSvg.svg";
 import telegramSvg from "./assets/telegramSvg.svg";
 import twitterSvg from "./assets/twitterSvg.svg";
@@ -69,6 +71,22 @@ function App() {
                 techniques and additional revenue generation for the ecosystem.
               </div>
               <div className="home__section__overlay__left__btn__container">
+                <a href="/" className="home__section__overlay__left__btn">
+                  <img
+                    src={buy}
+                    alt="buy"
+                    className="home__section__overlay__left__btn__img"
+                  />
+                  Buy
+                </a>
+                <a href="/" className="home__section__overlay__left__btn">
+                  <img
+                    src={dil}
+                    alt="dil"
+                    className="home__section__overlay__left__btn__img"
+                  />
+                  WhitePaper
+                </a>
                 <a href="/" className="home__section__overlay__left__btn">
                   <img
                     src={chartSvg}
@@ -499,17 +517,14 @@ function App() {
                 />
               </div>
               <div className="steps__section__content__entry__heading__sub__heading">
-                Create MetaMask Wallet
+                Download Metamask
               </div>
             </div>
             <div className="steps__section__content__entry__info">
-              As per the stories told by old nan the emergence of the White
-              Walker Inu is accompanied by the long night. The long night will
-              last for 24 hours from the time of emergence of the White Walker
-              Inu ($WINU) during which the sale tax will be 25% This is to
-              punish early sellers and reward our strong diamond handed dead
-              army, while at the same time incentivising holding and having a
-              positive boost on price.
+              From the App Store or Google Play Store, for free. Or Add the
+              desktop browser extension on Google Chrome by going to
+              metamask.io. Follow the easy steps from their guide to setup a
+              wallet.
             </div>
           </div>
           <div className="steps__section__content__entry">
@@ -529,13 +544,9 @@ function App() {
               </div>
             </div>
             <div className="steps__section__content__entry__info">
-              As per the stories told by old nan the emergence of the White
-              Walker Inu is accompanied by the long night. The long night will
-              last for 24 hours from the time of emergence of the White Walker
-              Inu ($WINU) during which the sale tax will be 25% This is to
-              punish early sellers and reward our strong diamond handed dead
-              army, while at the same time incentivising holding and a positive
-              boost on price.
+              You can buy ETH directly through Metamask or you can transfer some
+              from another wallet or crypto exchange. You can follow tutorials
+              on Youtube if you get stuck on this step.
             </div>
           </div>
           <div className="steps__section__content__entry">
@@ -555,13 +566,10 @@ function App() {
               </div>
             </div>
             <div className="steps__section__content__entry__info">
-              As per the stories told by old nan the emergence of the White
-              Walker Inu is accompanied by the long night. The long night will
-              last for 24 hours from the time of emergence of the White Walker
-              Inu ($WINU) during which the sale tax will be 25% This is to
-              punish early sellers and reward our strong diamond handed dead
-              army, while at the same time incentivising holding and a positive
-              boost on price.
+              Go to uniswap.org via a desktop browser or inside your Metamask
+              wallet tap the three blue lines at the top left of your screen to
+              reveal your browser. When Metamask asks for your signature go
+              ahead and click sign.
             </div>
           </div>
           <div className="steps__section__content__entry">
@@ -577,17 +585,13 @@ function App() {
                 />
               </div>
               <div className="steps__section__content__entry__heading__sub__heading">
-                Swap your ETH for Play
+                Swap your ETH for WINU
               </div>
             </div>
             <div className="steps__section__content__entry__info">
-              As per the stories told by old nan the emergence of the White
-              Walker Inu is accompanied by the long night. The long night will
-              last for 24 hours from the time of emergence of the White Walker
-              Inu ($WINU) during which the sale tax will be 25% This is to
-              punish early sellers and reward our strong diamond handed dead
-              army, while at the same time incentivising holding and a positive
-              boost on price.
+              Click the cog button and change the Slippage amount to 12-15%. Add
+              the desired ETH amount you’d like to swap, once you’re happy click
+              the “Swap” button to finalise the trade.
             </div>
           </div>
         </div>
@@ -602,7 +606,7 @@ function App() {
             <div className="footer__overlay__content__info">
               Our community is growing stronger by the day, follow us on our
               social media platforms to get to most up-to-date and accurate
-              Whitewalkerinu information
+              Whitewalkerinu information.
             </div>
             <div className="footer__overlay__content__info">
               We invite you to join our Telegram group, where you can interact

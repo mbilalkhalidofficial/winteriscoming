@@ -152,6 +152,7 @@ body {
 .home__section__overlay__left__btn__container {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 .home__section__overlay__left__btn__img {
   width: 20px;
@@ -520,7 +521,7 @@ body {
     height: 750px;
   }
   .home__section__overlay__left__btn__container {
-    flex-direction: column;
+    justify-content: center;
   }
   .home__section {
     height: 1100px;
