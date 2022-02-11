@@ -101,7 +101,7 @@ function App() {
                     alt="entherscanSvg"
                     className="home__section__overlay__left__btn__img"
                   />
-                  Entherscan
+                  Etherscan
                 </a>
                 <a href="/" className="home__section__overlay__left__btn">
                   <img
