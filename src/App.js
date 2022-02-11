@@ -24,9 +24,9 @@ import step1 from "./assets/step1.png";
 import step2 from "./assets/step2.png";
 import step3 from "./assets/step3.png";
 import step4 from "./assets/step4.png";
+import whitepaper from "./assets/whitepaper.pdf";
 import "animate.css";
 import Typewriter from "typewriter-effect";
-import { Link } from "react-router-dom";
 
 function App() {
   const [isAnimate, setIsAnimate] = useState(false);
@@ -79,7 +79,10 @@ function App() {
                   />
                   Buy
                 </a>
-                <a href="/" className="home__section__overlay__left__btn">
+                <a
+                  href={whitepaper}
+                  className="home__section__overlay__left__btn"
+                >
                   <img
                     src={dil}
                     alt="dil"
